@@ -32,7 +32,7 @@
         <!-- Versions of JBoss projects -->
         <version.org.jboss.spec.jboss.javaee.6.0>3.0.0.Final-redhat-1</version.org.jboss.spec.jboss.javaee.6.0>
         <!-- Inherited: <version.org.jboss.jbossts.jbossjts>4.16.4.Final</version.org.jboss.jbossts.jbossjts> -->
-        <version.org.jboss.errai>2.0.CR2</version.org.jboss.errai>
+        <version.org.jboss.errai>2.0.0.Final-redhat-1</version.org.jboss.errai>
 
         <!-- Versions of projects not directly under JBoss umbrella -->
         <version.com.google.gwt>2.4.0</version.com.google.gwt>
