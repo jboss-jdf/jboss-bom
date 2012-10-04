@@ -17,7 +17,7 @@ DIR=$(cd -P -- "$(dirname -- "$0")" && pwd -P)
 # EAP team email subject
 EAP_SUBJECT="\${RELEASEVERSION} of JBoss BOMs released, please merge with http://github.com/jboss-eap/jboss-bom, tag and add to EAP maven repo build"
 # EAP team email To ?
-EAP_EMAIL_TO="pgier@redhat.com kpwiko@redhat.com"
+EAP_EMAIL_TO="pgier@redhat.com kpiwko@redhat.com"
 
 
 
@@ -42,7 +42,7 @@ notify()
    echo "***** Performing JBoss BOM release notifications"
    echo "*** Notifying JBoss EAP team"
    # send email using /bin/mail
-   subject = eval $EAP_SUBJECT
+   subject=eval $EAP_SUBJECT
    echo "See \$subject :-)" | /usr/bin/env mail -s "$subject" "$EAP_EMAIL_TO"
 
 }
@@ -56,7 +56,9 @@ release()
    $DIR/release-utils.sh -r
    $DIR/release-utils.sh -u -o $RELEASEVERSION -n $NEWSNAPSHOTVERSION
    git commit -a -m "Prepare for development of $NEWSNAPSHOTVERSION"
+   git push upstrem HEAD --tags
    echo "***** JBoss BOMs released"
+   notify
 }
 
 SNAPSHOTVERSION="UNDEFINED"

@@ -1,8 +1,8 @@
-JBoss Java EE 6 with Errai
-==========================
+JBoss Java EE 6 with Infinispan
+===============================
 
-This BOM builds on the Java EE full profile BOM, adding the Errai framework and the Google Web Toolkit plus its Maven plugin.
- 
+This BOM builds on the Java EE full profile BOM, adding Infinispan. 
+  
 Usage
 -----
 
@@ -12,10 +12,11 @@ To use the BOM, import into your dependency management:
         <dependencies>
             <dependency>
                <groupId>org.jboss.bom</groupId>
-               <artifactId>jboss-javaee-6.0-with-errai</artifactId>
+               <artifactId>jboss-javaee-6.0-with-infinispan</artifactId>
                <version>1.0.1.Final-redhat-1</version>
-               <type>pom</scope>
+               <type>pom</type>
                <scope>import</scope>
             </dependency>
         </dependencies>
-    </dependencyManagement>
+    </dependencyManagement> 
+	
