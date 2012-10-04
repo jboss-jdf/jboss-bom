@@ -11,7 +11,7 @@
         <relativePath />
     </parent>
 
-    <groupId>org.jboss.bom</groupId>
+    <groupId>com.redhat.jboss.wfk.boms</groupId>
     <artifactId>jboss-bom-parent</artifactId>
     <version>1.0.1.Final-redhat-1</version>
 

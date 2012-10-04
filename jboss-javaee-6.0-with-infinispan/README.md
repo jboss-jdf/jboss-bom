@@ -11,7 +11,7 @@ To use the BOM, import into your dependency management:
     <dependencyManagement>
         <dependencies>
             <dependency>
-               <groupId>org.jboss.bom</groupId>
+               <groupId>com.redhat.jboss.wfk.boms</groupId>
                <artifactId>jboss-javaee-6.0-with-infinispan</artifactId>
                <version>1.0.1.Final-redhat-1</version>
                <type>pom</type>
