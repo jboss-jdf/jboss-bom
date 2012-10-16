@@ -64,7 +64,7 @@
 
             <!-- Add Arquillian Dependencies certified as a part of JBoss Web Framework Kit -->
             <dependency>
-                <groupId>org.jboss.bom</groupId>
+                <groupId>com.redhat.jboss.wfk.boms</groupId>
                 <artifactId>jboss-wfk-arquillian</artifactId>
                 <version>${project.version}</version>
                 <type>pom</type>
