@@ -113,7 +113,6 @@
         <module>jboss-javaee-6.0-with-security</module>
         <module>jboss-javaee-6.0-with-tools</module>
         <module>jboss-javaee-6.0-with-transactions</module>
-        <module>jboss-wfk-arquillian</module>
     </modules>
 
     <distributionManagement>
