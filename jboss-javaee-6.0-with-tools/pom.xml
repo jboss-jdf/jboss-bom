@@ -26,6 +26,7 @@
 
     <properties>
         <!-- Version properties are inherited from parent -->
+        <version.shrinkwrap_shrinkwrap>1.0.0</version.shrinkwrap_shrinkwrap>
     </properties>
 
     <dependencyManagement>
