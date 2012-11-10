@@ -36,8 +36,8 @@
         <version.org.jboss.arquillian.extension.drone>1.1.0.Final</version.org.jboss.arquillian.extension.drone>
         
         <!-- External Dependencies from Arquillian Drone -->
-        <version.org.seleniumhq.selenium.server>2.20.0</version.org.seleniumhq.selenium.server>
-        <version.org.seleniumhq.selenium>2.20.0</version.org.seleniumhq.selenium>
+        <version.org.seleniumhq.selenium.server>2.25.0</version.org.seleniumhq.selenium.server>
+        <version.org.seleniumhq.selenium>2.25.0</version.org.seleniumhq.selenium>
         
         <!-- Arquillian Graphene -->
         <version.org.jboss.arquillian.graphene>1.0.0.Final</version.org.jboss.arquillian.graphene>
