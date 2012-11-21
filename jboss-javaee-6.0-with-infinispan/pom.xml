@@ -5,8 +5,8 @@
     <modelVersion>4.0.0</modelVersion>
 
     <parent>
-        <groupId>org.jboss.bom</groupId>
-        <version>1.0.4.Final</version>
+        <groupId>org.jboss.bom.jdg</groupId>
+        <version>6.2.0-redhat-1</version>
         <artifactId>jboss-bom-parent</artifactId>
     </parent>
 
@@ -47,6 +47,11 @@
                 <scope>import</scope>
             </dependency>
 
+            <dependency>
+                <groupId>org.infinispan</groupId>
+                <artifactId>infinispan-commons</artifactId>
+                <version>${version.org.infinispan}</version>
+            </dependency>
 
             <dependency>
                 <groupId>org.infinispan</groupId>
@@ -60,7 +65,69 @@
                 <version>${version.org.infinispan}</version>
             </dependency>
 
+            <dependency>
+                <groupId>org.infinispan</groupId>
+                <artifactId>infinispan-cachestore-jdbc</artifactId>
+                <version>${version.org.infinispan}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>org.infinispan</groupId>
+                <artifactId>infinispan-cachestore-leveldb</artifactId>
+                <version>${version.org.infinispan}</version>
+            </dependency>
+            
+            
+            <dependency>
+                <groupId>org.infinispan</groupId>
+                <artifactId>infinispan-cachestore-remote</artifactId>
+                <version>${version.org.infinispan}</version>
+            </dependency>
+            
+            <dependency>
+                <groupId>org.infinispan</groupId>
+                <artifactId>infinispan-cachestore-rest</artifactId>
+                <version>${version.org.infinispan}</version>
+            </dependency>
+            
+            <dependency>
+                <groupId>org.infinispan</groupId>
+                <artifactId>infinispan-cdi</artifactId>
+                <version>${version.org.infinispan}</version>
+            </dependency>
+            
+            <dependency>
+                <groupId>org.infinispan</groupId>
+                <artifactId>infinispan-query</artifactId>
+                <version>${version.org.infinispan}</version>
+            </dependency>
+            
+            <dependency>
+                <groupId>org.infinispan</groupId>
+                <artifactId>infinispan-query-dsl</artifactId>
+                <version>${version.org.infinispan}</version>
+            </dependency>
+            
+            <dependency>
+                <groupId>org.infinispan</groupId>
+                <artifactId>infinispan-lucene-directory</artifactId>
+                <version>${version.org.infinispan}</version>
+            </dependency>
+            
+            <dependency>
+                <groupId>org.infinispan</groupId>
+                <artifactId>infinispan-lucene-directory</artifactId>
+                <version>${version.org.infinispan}</version>
+            </dependency>
+            
+            <dependency>
+                <groupId>org.infinispan</groupId>
+                <artifactId>infinispan-remote-query-client</artifactId>
+                <version>${version.org.infinispan}</version>
+            </dependency>
+
         </dependencies>
     </dependencyManagement>
 
 </project>
+
