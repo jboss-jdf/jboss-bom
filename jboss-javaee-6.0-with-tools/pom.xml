@@ -6,7 +6,7 @@
 
     <parent>
         <groupId>com.redhat.jboss.wfk.boms</groupId>
-        <version>1.0.1.Final-redhat-1</version>
+        <version>1.0.2.Final-redhat-1</version>
         <artifactId>jboss-bom-parent</artifactId>
     </parent>
 
@@ -464,6 +464,19 @@
                 <groupId>org.jboss.arquillian.container</groupId>
                 <artifactId>arquillian-tomcat-managed-6</artifactId>
                 <version>${version.org.jboss.arquillian.container.tomcat6}</version>
+            </dependency>
+            
+            <!-- Specific version to make remoting compatible with EAP 6.0.1 -->
+            <dependency>
+                <groupId>org.jboss.remotingjmx</groupId>
+                <artifactId>remoting-jmx</artifactId>
+                <version>${version.org.jboss.remoting.jmx}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>org.jboss.remoting3</groupId>
+                <artifactId>jboss-remoting</artifactId>
+                <version>${version.org.jboss.remoting3}</version>
             </dependency>
 
             <!-- End of Arquillian Tomcat 6 adaptor -->
