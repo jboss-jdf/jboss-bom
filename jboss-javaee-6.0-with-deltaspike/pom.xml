@@ -10,11 +10,11 @@
         <artifactId>jboss-bom-parent</artifactId>
     </parent>
 
-    <artifactId>jboss-javaee-6.0-with-security</artifactId>
+    <artifactId>jboss-javaee-6.0-with-deltaspike</artifactId>
     <packaging>pom</packaging>
 
-    <name>JBoss Java EE 6 Specification APIs with Security</name>
-    <description>Dependency Management for Java EE 6 Specification APIs with JBoss specific Security features. Currently included is JBoss Negotiation.</description>
+    <name>JBoss Java EE 6 Specification APIs with Deltaspike</name>
+    <description>Dependency Management for Java EE 6 Specification APIs with Deltaspike</description>
 
     <licenses>
         <license>
@@ -35,10 +35,9 @@
                 a Bill of Materials (BOM). A BOM specifies the versions of a "stack" (or 
                 a collection) of artifacts. We use this here so that we always get the correct 
                 versions of artifacts. Here we use the jboss-javaee-6.0 stack (you can read 
-                this as the JBoss stack of the Java EE full Profile 6 APIs), and we use version 
-                3.0.0.Beta1 which is the latest release of the stack. You can actually use 
-                this stack with any version of JBoss AS that implements Java EE 6, not just 
-                JBoss AS 7! -->
+                this as the JBoss stack of the Java EE 6 APIs). You can actually use this 
+                stack with any version of JBoss AS that implements Java EE 6, not just JBoss 
+                AS 7! -->
             <dependency>
                 <groupId>org.jboss.spec</groupId>
                 <artifactId>jboss-javaee-6.0</artifactId>
@@ -47,32 +46,45 @@
                 <scope>import</scope>
             </dependency>
 
-            <!-- JBoss Negotiation Dependencies -->
             <dependency>
-                <groupId>org.jboss.security</groupId>
-                <artifactId>jboss-negotiation-common</artifactId>
-                <version>${version.org.jboss.security.negotiation}</version>
+                <groupId>org.apache.deltaspike.core</groupId>
+                <artifactId>deltaspike-core-api</artifactId>
+                <version>${version.org.apache.deltaspike}</version>
             </dependency>
+
             <dependency>
-                <groupId>org.jboss.security</groupId>
-                <artifactId>jboss-negotiation-extras</artifactId>
-                <version>${version.org.jboss.security.negotiation}</version>
+                <groupId>org.apache.deltaspike.core</groupId>
+                <artifactId>deltaspike-core-impl</artifactId>
+                <version>${version.org.apache.deltaspike}</version>
             </dependency>
+
             <dependency>
-                <groupId>org.jboss.security</groupId>
-                <artifactId>jboss-negotiation-ntlm</artifactId>
-                <version>${version.org.jboss.security.negotiation}</version>
-                <scope>provided</scope>
+                <groupId>org.apache.deltaspike.modules</groupId>
+                <artifactId>deltaspike-jpa-module-api</artifactId>
+                <version>${version.org.apache.deltaspike}</version>
             </dependency>
+
             <dependency>
-                <groupId>org.jboss.security</groupId>
-                <artifactId>jboss-negotiation-spnego</artifactId>
-                <version>${version.org.jboss.security.negotiation}</version>
-                <scope>provided</scope>
+                <groupId>org.apache.deltaspike.modules</groupId>
+                <artifactId>deltaspike-jpa-module-impl</artifactId>
+                <version>${version.org.apache.deltaspike}</version>
             </dependency>
+
+            <dependency>
+                <groupId>org.apache.deltaspike.modules</groupId>
+                <artifactId>deltaspike-security-module-api</artifactId>
+                <version>${version.org.apache.deltaspike}</version>
+            </dependency>
+
+
+            <dependency>
+                <groupId>org.apache.deltaspike.modules</groupId>
+                <artifactId>deltaspike-security-module-impl</artifactId>
+                <version>${version.org.apache.deltaspike}</version>
+            </dependency>
+
 
         </dependencies>
-
     </dependencyManagement>
-</project>
 
+</project>
