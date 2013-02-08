@@ -89,6 +89,7 @@
         <version.org.mvel>2.1.Beta8</version.org.mvel>
         <version.org.osgi>4.2.0</version.org.osgi>
         <version.org.testng>5.14.6</version.org.testng>
+        <version.javax.validation>1.0.0.GA</version.javax.validation>
 
         <!-- Versions of Maven plugins, user must setup them by his/her own -->
         <version.surefire.plugin>2.10</version.surefire.plugin>
