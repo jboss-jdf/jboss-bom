@@ -62,24 +62,33 @@
                 <version>${version.org.testng}</version>
             </dependency>
 
-            <!-- Arquillian lets test you your applications in real environment -->
+            <!-- Add Arquillian Dependencies certified as a part of JBoss Web Framework Kit -->
             <dependency>
+                <groupId>org.jboss.bom</groupId>
+                <artifactId>jboss-wfk-arquillian</artifactId>
+                <version>${project.version}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+
+            <!-- Arquillian lets test you your applications in real environment -->
+            <!--<dependency>
                 <groupId>org.jboss.arquillian</groupId>
                 <artifactId>arquillian-bom</artifactId>
                 <version>${version.org.jboss.arquillian}</version>
                 <type>pom</type>
                 <scope>import</scope>
-            </dependency>
+            </dependency>-->
 
             <!-- Arquillian Drone adds support for visual testing of your 
                 application -->
-            <dependency>
+            <!--<dependency>
                 <groupId>org.jboss.arquillian.extension</groupId>
                 <artifactId>arquillian-drone-bom</artifactId>
                 <version>${version.org.jboss.arquillian.extension.drone}</version>
                 <type>pom</type>
                 <scope>import</scope>
-            </dependency>
+            </dependency>-->
 
             <!-- Arquillian Drone bindings for DefaultSelenium based browsers -->
             <dependency>
