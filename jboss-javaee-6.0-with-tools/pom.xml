@@ -28,7 +28,7 @@
         <!-- Arquillian -->
         <version.org.jboss.arquillian>1.0.3.Final</version.org.jboss.arquillian>
         <!-- External Dependencies from Arquillian BOM -->
-        <version.shrinkwrap_shrinkwrap>1.0.0</version.shrinkwrap_shrinkwrap>
+        <version.shrinkwrap_shrinkwrap>1.1.1</version.shrinkwrap_shrinkwrap>
         <!-- <version.shrinkwrap_resolver>1.0.0-beta-6</version.shrinkwrap_resolver> -->
         <!-- <version.shrinkwrap_descriptors>2.0.0-alpha-2</version.shrinkwrap_descriptors> -->
 
