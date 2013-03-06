@@ -11,9 +11,9 @@
         <relativePath />
     </parent>
 
-    <groupId>com.redhat.jboss.wfk.boms</groupId>
+    <groupId>org.jboss.bom</groupId>
     <artifactId>jboss-bom-parent</artifactId>
-    <version>1.0.4.Final-redhat-1</version>
+    <version>1.0.4.Final-redhat-wfk-1</version>
 
     <packaging>pom</packaging>
 
@@ -107,18 +107,11 @@
     </properties>
 
     <modules>
-        <module>jboss-javaee-6.0-with-all</module>
         <module>jboss-javaee-6.0-with-deltaspike</module>
         <module>jboss-javaee-6.0-with-errai</module>
         <module>jboss-javaee-6.0-with-hibernate</module>
-        <module>jboss-javaee-6.0-with-hibernate3</module>
-        <module>jboss-javaee-6.0-with-infinispan</module>
-        <module>jboss-javaee-6.0-with-logging</module>
-        <module>jboss-javaee-6.0-with-osgi</module>
         <module>jboss-javaee-6.0-with-richfaces</module>
-        <module>jboss-javaee-6.0-with-security</module>
         <module>jboss-javaee-6.0-with-tools</module>
-        <module>jboss-javaee-6.0-with-transactions</module>
     </modules>
 
     <distributionManagement>

@@ -5,10 +5,11 @@
     <modelVersion>4.0.0</modelVersion>
 
     <parent>
-        <groupId>com.redhat.jboss.wfk.boms</groupId>
-        <version>1.0.4.Final-redhat-1</version>
+        <groupId>org.jboss.bom</groupId>
+        <version>1.0.4.Final-redhat-wfk-1</version>
         <artifactId>jboss-bom-parent</artifactId>
     </parent>
+
 
     <artifactId>jboss-javaee-6.0-with-tools</artifactId>
     <packaging>pom</packaging>
@@ -216,11 +217,12 @@
                 <artifactId>arquillian-protocol-servlet</artifactId>
                 <version>${version.org.jboss.arquillian}</version>
             </dependency>
+<!--          Not supported protocol  
             <dependency>
                 <groupId>org.jboss.arquillian.protocol</groupId>
                 <artifactId>arquillian-protocol-jmx</artifactId>
                 <version>${version.org.jboss.arquillian}</version>
-            </dependency>
+            </dependency>-->
 
             <!-- Enrichers -->
             <dependency>
