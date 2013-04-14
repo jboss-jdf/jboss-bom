@@ -4,7 +4,7 @@
 
     <groupId>org.jboss.bom</groupId>
     <artifactId>jboss-wfk-arquillian</artifactId>
-    <version>1.0.4.Final-redhat-3</version>
+    <version>1.0.4.Final-redhat-4</version>
     <packaging>pom</packaging>
 
     <name>JBoss Web Framework Kit Arquillian Bill of Materials</name>
