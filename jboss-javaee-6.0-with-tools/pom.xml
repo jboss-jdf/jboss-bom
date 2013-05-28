@@ -6,7 +6,7 @@
 
     <parent>
         <groupId>org.jboss.bom</groupId>
-        <version>1.0.4.Final-redhat-wfk-1</version>
+        <version>1.0.4.Final-redhat-wfk-2</version>
         <artifactId>jboss-bom-parent</artifactId>
     </parent>
 
@@ -30,7 +30,7 @@
         <version.org.jboss.arquillian>1.0.3.Final</version.org.jboss.arquillian>
         <!-- External Dependencies from Arquillian BOM -->
         <version.shrinkwrap_shrinkwrap>1.0.0</version.shrinkwrap_shrinkwrap>
-        <!-- <version.shrinkwrap_resolver>1.0.0-beta-6</version.shrinkwrap_resolver> -->
+        <version.shrinkwrap_resolver>2.0.0-beta-3</version.shrinkwrap_resolver> 
         <!-- <version.shrinkwrap_descriptors>2.0.0-alpha-2</version.shrinkwrap_descriptors> -->
 
         <!-- Arquillian Drone -->
@@ -44,7 +44,7 @@
         <version.org.jboss.arquillian.graphene>1.0.0.Final</version.org.jboss.arquillian.graphene>
         
         <!-- Containers -->
-        <version.org.jboss.as>7.1.3.Final</version.org.jboss.as>
+        <version.org.jboss.as>7.2.0.Final</version.org.jboss.as>
         <version.org.jboss.arquillian.container.tomcat6>1.0.0.CR4</version.org.jboss.arquillian.container.tomcat6>
      </properties>
  

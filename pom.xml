@@ -3,17 +3,17 @@
     xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
 
     <modelVersion>4.0.0</modelVersion>
-   
+
     <parent>
         <groupId>org.jboss</groupId>
         <artifactId>jboss-parent</artifactId>
-        <version>9-redhat-1</version>
-        <relativePath />
+        <version>10-redhat-2</version>
+        <relativePath/>
     </parent>
 
     <groupId>org.jboss.bom</groupId>
     <artifactId>jboss-bom-parent</artifactId>
-    <version>1.0.4.Final-redhat-wfk-1</version>
+    <version>1.0.4.Final-redhat-wfk-2</version>
 
     <packaging>pom</packaging>
 
@@ -67,14 +67,14 @@
         <!-- Inherited <version.org.infinispan>5.1.2.FINAL</version.org.infinispan> -->
 
         <version.org.jboss.shrinkwrap.resolver>1.0.0-beta-7</version.org.jboss.shrinkwrap.resolver>
-        <version.org.richfaces>4.3.1.Final-redhat-1</version.org.richfaces>
+        <version.org.richfaces>4.3.2.Final-redhat-1</version.org.richfaces>
 
         <!-- Version of Hibernate projects -->
         <!-- Inherited: <version.org.hibernate>4.1.1.Final</version.org.hibernate> -->
         <version.org.hibernate.common>4.0.1.Final</version.org.hibernate.common>
         <version.org.hibernate.javax.persistence>${version.org.hibernate.javax.persistence.hibernate-jpa-2.0-api}</version.org.hibernate.javax.persistence>
         <version.org.hibernate-jpamodelgen>1.2.0.Final</version.org.hibernate-jpamodelgen>
-        <version.org.hibernate.search>4.2.0.Final-redhat-wfk-2</version.org.hibernate.search>
+        <version.org.hibernate.search>4.2.0.Final-redhat-wfk-3</version.org.hibernate.search>
         <!-- Inherited: <version.org.hibernate.validator>4.2.0.Final</version.org.hibernate.validator> -->
 
         <!-- Version of Hibernate 3 projects -->
