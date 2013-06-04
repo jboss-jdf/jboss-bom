@@ -55,7 +55,7 @@
          |-->
 
         <!-- Version of Deltaspike -->
-        <version.org.apache.deltaspike>0.3-incubating</version.org.apache.deltaspike>
+        <version.org.apache.deltaspike>0.4</version.org.apache.deltaspike>
         
         <!-- Versions of JBoss projects -->
         <!-- Inherited: <version.org.jboss.jbossts.jbossjts>4.16.4.Final</version.org.jboss.jbossts.jbossjts> -->
