@@ -83,7 +83,7 @@
         <version.org.hibernate3.commons.annotations>3.2.0.Final</version.org.hibernate3.commons.annotations>
 
         <!-- Versions of projects not directly under JBoss umbrella -->
-        <version.com.google.gwt>2.4.0</version.com.google.gwt>
+        <version.com.google.gwt>2.5.1</version.com.google.gwt>
         <version.junit>4.10</version.junit>
         <version.log4j>1.2.16</version.log4j>
         <version.org.mvel>2.1.Beta8</version.org.mvel>

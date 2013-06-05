@@ -29,7 +29,7 @@
         <!-- Arquillian -->
         <version.org.jboss.arquillian>1.0.3.Final</version.org.jboss.arquillian>
         <!-- External Dependencies from Arquillian BOM -->
-        <version.shrinkwrap_shrinkwrap>1.0.0</version.shrinkwrap_shrinkwrap>
+        <version.shrinkwrap_shrinkwrap>1.1.2</version.shrinkwrap_shrinkwrap>
         <!-- <version.shrinkwrap_descriptors>2.0.0-alpha-2</version.shrinkwrap_descriptors> -->
 
         <!-- Arquillian Drone -->
@@ -92,6 +92,67 @@
                 <scope>import</scope>
                 </dependency>
             -->
+            <!-- start of ShrinkWrap -->
+
+            <!-- BOM cannot be used directly here -->
+            <!--
+                <dependency>
+                <groupId>org.jboss.shrinkwrap</groupId>
+                <artifactId>shrinkwrap-bom</artifactId>
+                <version>${version.shrinkwrap_shrinkwrap}</version>
+                <type>pom</type>
+                <scope>import</scope>
+                </dependency>
+            -->
+
+            <dependency>
+                <groupId>org.jboss.shrinkwrap</groupId>
+                <artifactId>shrinkwrap-api</artifactId>
+                <version>${version.shrinkwrap_shrinkwrap}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.jboss.shrinkwrap</groupId>
+                <artifactId>shrinkwrap-spi</artifactId>
+                <version>${version.shrinkwrap_shrinkwrap}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.jboss.shrinkwrap</groupId>
+                <artifactId>shrinkwrap-impl-base</artifactId>
+                <version>${version.shrinkwrap_shrinkwrap}</version>
+            </dependency>
+            <!-- end of ShrinkWrap -->
+
+            <!-- ShrinkWrap Resolver -->                        
+            <dependency>
+                <groupId>org.jboss.shrinkwrap.resolver</groupId>
+                <artifactId>shrinkwrap-resolver-bom</artifactId>
+                <version>${version.org.jboss.shrinkwrap.resolver}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+            
+            <!-- Older versions of Shrinkwrap don't automatically manage 
+                the version of Shrinkwrap depchain for us -->
+            <!-- TODO remove this when Arquillian upgrades to a newer shrinkwrap -->
+            <dependency>
+                <groupId>org.jboss.shrinkwrap.resolver</groupId>
+                <artifactId>shrinkwrap-resolver-depchain</artifactId>
+                <type>pom</type>
+                <version>${version.org.jboss.shrinkwrap.resolver}</version>
+            </dependency>            
+
+            <!-- ShrinkWrap Descriptors -->
+            <!-- ShrinkWrap Descriptors are not supported -->
+            <!--
+                <dependency>
+                <groupId>org.jboss.shrinkwrap.descriptors</groupId>
+                <artifactId>shrinkwrap-descriptors-bom</artifactId>
+                <version>${version.shrinkwrap_descriptors}</version>
+                <type>pom</type>
+                <scope>import</scope>
+                </dependency>
+            -->
+            <!-- end of Arquillian BOM -->
 
             <!-- Core -->
             <dependency>
@@ -245,60 +306,6 @@
                 <version>${version.org.jboss.arquillian}</version>
             </dependency>
 
-            <!-- start of ShrinkWrap -->
-
-            <!-- BOM cannot be used directly here -->
-            <!--
-                <dependency>
-                <groupId>org.jboss.shrinkwrap</groupId>
-                <artifactId>shrinkwrap-bom</artifactId>
-                <version>${version.shrinkwrap_shrinkwrap}</version>
-                <type>pom</type>
-                <scope>import</scope>
-                </dependency>
-            -->
-
-            <dependency>
-                <groupId>org.jboss.shrinkwrap</groupId>
-                <artifactId>shrinkwrap-api</artifactId>
-                <version>${version.shrinkwrap_shrinkwrap}</version>
-            </dependency>
-            <dependency>
-                <groupId>org.jboss.shrinkwrap</groupId>
-                <artifactId>shrinkwrap-spi</artifactId>
-                <version>${version.shrinkwrap_shrinkwrap}</version>
-            </dependency>
-            <dependency>
-                <groupId>org.jboss.shrinkwrap</groupId>
-                <artifactId>shrinkwrap-impl-base</artifactId>
-                <version>${version.shrinkwrap_shrinkwrap}</version>
-            </dependency>
-            <!-- end of ShrinkWrap -->
-
-            <!-- ShrinkWrap Resolver -->
-            <!-- ShrinkWrap Resolver is not supported -->
-            <!--
-                <dependency>
-                <groupId>org.jboss.shrinkwrap.resolver</groupId>
-                <artifactId>shrinkwrap-resolver-bom</artifactId>
-                <version>${version.shrinkwrap_resolver}</version>
-                <type>pom</type>
-                <scope>import</scope>
-                </dependency>
-            -->
-
-            <!-- ShrinkWrap Descriptors -->
-            <!-- ShrinkWrap Descriptors are not supported -->
-            <!--
-                <dependency>
-                <groupId>org.jboss.shrinkwrap.descriptors</groupId>
-                <artifactId>shrinkwrap-descriptors-bom</artifactId>
-                <version>${version.shrinkwrap_descriptors}</version>
-                <type>pom</type>
-                <scope>import</scope>
-                </dependency>
-            -->
-            <!-- end of Arquillian BOM -->
 
             <!-- start of Arquillian Drone -->
             <!-- Arquillian Drone adds support for visual testing of your 
@@ -492,17 +499,6 @@
             </dependency>
 
             <!-- End of Arquillian Tomcat 6 adaptor -->
-
-            <!-- Older versions of Shrinkwrap don't automatically manage 
-                the version of Shrinkwrap depchain for us -->
-            <!-- TODO remove this when Arquillian upgrades to a newer shrinkwrap -->
-            <dependency>
-                <groupId>org.jboss.shrinkwrap.resolver</groupId>
-                <artifactId>shrinkwrap-resolver-depchain</artifactId>
-                <type>pom</type>
-                <version>${version.org.jboss.shrinkwrap.resolver}</version>
-            </dependency>
-
         </dependencies>
     </dependencyManagement>
 
