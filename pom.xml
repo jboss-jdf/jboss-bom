@@ -74,7 +74,7 @@
         <version.org.hibernate.common>4.0.1.Final</version.org.hibernate.common>
         <version.org.hibernate.javax.persistence>${version.org.hibernate.javax.persistence.hibernate-jpa-2.0-api}</version.org.hibernate.javax.persistence>
         <version.org.hibernate-jpamodelgen>1.2.0.Final</version.org.hibernate-jpamodelgen>
-        <version.org.hibernate.search>4.3.0.Final-redhat-wfk-1</version.org.hibernate.search>
+        <version.org.hibernate.search>4.3.0.Final-redhat-wfk-2</version.org.hibernate.search>
         <!-- Inherited: <version.org.hibernate.validator>4.2.0.Final</version.org.hibernate.validator> -->
 
         <!-- Version of Hibernate 3 projects -->
