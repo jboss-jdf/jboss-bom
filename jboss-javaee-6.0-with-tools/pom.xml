@@ -27,7 +27,7 @@
 
     <properties>
         <!-- Arquillian -->
-        <version.org.jboss.arquillian>1.0.4.Final</version.org.jboss.arquillian>
+        <version.org.jboss.arquillian>1.1.0.Final</version.org.jboss.arquillian>
         <!-- External Dependencies from Arquillian BOM -->
         <version.shrinkwrap_shrinkwrap>1.1.2</version.shrinkwrap_shrinkwrap>
         <!-- <version.shrinkwrap_descriptors>2.0.0-alpha-2</version.shrinkwrap_descriptors> -->
