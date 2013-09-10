@@ -13,7 +13,7 @@
 
     <groupId>org.jboss.bom</groupId>
     <artifactId>jboss-bom-parent</artifactId>
-    <version>1.0.4.Final-redhat</version>
+    <version>1.0.4.Final-redhat-SNAPSHOT</version>
 
     <packaging>pom</packaging>
 
