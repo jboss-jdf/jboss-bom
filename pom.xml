@@ -228,6 +228,12 @@
                 <artifactId>jboss-logging-processor</artifactId>
                 <version>${version.org.jboss.logging.processor}</version>
             </dependency>
+            <!--  the jboss-logging-tools annotations  -->
+            <dependency>
+                <groupId>org.jboss.logging</groupId>
+                <artifactId>jboss-logging-annotations</artifactId>
+                <version>${version.org.jboss.logging.processor}</version>
+            </dependency>
             <!--  jboss-logging API -->
             <dependency>
                 <groupId>org.jboss.logging</groupId>
