@@ -50,7 +50,7 @@
         <version.org.jboss.jbossts.jbossjts>4.17.30.Final-redhat-1</version.org.jboss.jbossts.jbossjts>
         <version.org.jboss.logging>3.1.4.GA-redhat-2</version.org.jboss.logging>
         <version.org.jboss.logging.processor>1.1.0.Final</version.org.jboss.logging.processor>
-        <version.org.jboss.security.negotiation>2.3.10.Final-redhat-1</version.org.jboss.security.negotiation>
+        <version.org.jboss.security.negotiation>2.3.11.Final-redhat-1</version.org.jboss.security.negotiation>
         <version.org.jboss.spec.jboss.javaee.6.0>3.0.2.Final-redhat-15</version.org.jboss.spec.jboss.javaee.6.0>
 
         <!-- Hibernate -->
