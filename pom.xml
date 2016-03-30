@@ -59,7 +59,10 @@
         <version.org.jboss.security.jboss-negotiation>3.0.0.Final</version.org.jboss.security.jboss-negotiation>
         <version.org.jboss.spec.jboss.javaee7>1.0.3.Final</version.org.jboss.spec.jboss.javaee7>
         <version.org.jboss.shrinkwrap.resolver>2.2.2</version.org.jboss.shrinkwrap.resolver>
-        <version.org.jboss.ws.cxf>5.1.3.Final</version.org.jboss.ws.cxf>
+        <!-- Note this cannot be upgraded to 5.1.0.Final or later because it has dependencies
+        on forked glassfish jars that are only available in the jboss.org repo.  When a new
+        release is available which has only dependencies in Maven central, then this can be upgraded -->
+        <version.org.jboss.ws.cxf>5.1.0.Beta1</version.org.jboss.ws.cxf>
         <version.org.picketbox.picketbox-commons>1.0.0.final</version.org.picketbox.picketbox-commons>
         <version.org.picketlink>2.5.5.SP1</version.org.picketlink>
 
