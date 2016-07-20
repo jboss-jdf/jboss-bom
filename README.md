@@ -12,8 +12,8 @@ To use the BOM, import into your dependency management. For example, if you want
         <dependencies>
             <dependency>
                 <groupId>org.jboss.bom</groupId>
-                <artifactId>jboss-javaee-7.0-eap</artifactId>
-                <version>7.0.1-SNAPSHOT</version>
+                <artifactId>jboss-javaee-7.1-eap</artifactId>
+                <version>7.1.0-SNAPSHOT</version>
                 <scope>import</scope>
             </dependency>
         </dependencies>
