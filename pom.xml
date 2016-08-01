@@ -45,7 +45,7 @@
     <properties>
 
         <!-- Versions of JBoss projects -->
-        <version.org.jboss.eap>7.1.0.Alpha1-redhat-1</version.org.jboss.eap>
+        <version.org.jboss.eap>7.1.0.Alpha1-redhat-2</version.org.jboss.eap>
         <version.org.infinispan>8.2.3.Final</version.org.infinispan>
         <version.org.jboss.arquillian>1.1.11.Final</version.org.jboss.arquillian>
         <version.org.jboss.arquillian.extension.drone>2.0.0.Final</version.org.jboss.arquillian.extension.drone>
@@ -59,7 +59,7 @@
         <version.org.jboss.security.jboss-negotiation>3.0.2.Final-redhat-1</version.org.jboss.security.jboss-negotiation>
         <version.org.jboss.spec.jboss.javaee7>1.0.3.Final-redhat-4</version.org.jboss.spec.jboss.javaee7>
         <version.org.jboss.shrinkwrap.resolver>2.2.2</version.org.jboss.shrinkwrap.resolver>
-        <version.org.jboss.ws.cxf>5.1.4.Final</version.org.jboss.ws.cxf>
+        <version.org.jboss.ws.cxf>5.1.5.Final</version.org.jboss.ws.cxf>
         <version.org.picketbox.picketbox-commons>1.0.0.final-redhat-4</version.org.picketbox.picketbox-commons>
         <version.org.picketlink>2.5.5.SP2-redhat-1</version.org.picketlink>
         <version.org.glassfish.jaxb>2.2.11.redhat-4</version.org.glassfish.jaxb>
