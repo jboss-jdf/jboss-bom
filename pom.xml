@@ -281,23 +281,11 @@
                 <groupId>org.jboss.resteasy</groupId>
                 <artifactId>resteasy-atom-provider</artifactId>
                 <version>${version.org.jboss.resteasy}</version>
-                <exclusions>
-                    <exclusion>
-                        <groupId>com.sun.xml.bind</groupId>
-                        <artifactId>jaxb-impl</artifactId>
-                    </exclusion>
-                </exclusions>
             </dependency>
             <dependency>
                 <groupId>org.jboss.resteasy</groupId>
                 <artifactId>resteasy-jaxb-provider</artifactId>
                 <version>${version.org.jboss.resteasy}</version>
-                <exclusions>
-                    <exclusion>
-                        <groupId>com.sun.xml.bind</groupId>
-                        <artifactId>jaxb-impl</artifactId>
-                    </exclusion>
-                </exclusions>
             </dependency>
             <!-- resteasy-jettison-provider is deprecated for EAP 7 -->
             <dependency>
@@ -319,24 +307,6 @@
                 <groupId>org.jboss.resteasy</groupId>
                 <artifactId>resteasy-jaxrs</artifactId>
                 <version>${version.org.jboss.resteasy}</version>
-                <exclusions>
-                    <exclusion>
-                        <groupId>org.jboss.spec.javax.annotation</groupId>
-                        <artifactId>jboss-annotations-api_1.1_spec</artifactId>
-                    </exclusion>
-                    <exclusion>
-                        <groupId>net.jcip</groupId>
-                        <artifactId>jcip-annotations</artifactId>
-                    </exclusion>
-                    <exclusion>
-                        <groupId>org.apache.httpcomponents</groupId>
-                        <artifactId>httpclient</artifactId>
-                    </exclusion>
-                    <exclusion>
-                        <groupId>commons-io</groupId>
-                        <artifactId>commons-io</artifactId>
-                    </exclusion>
-                </exclusions>
             </dependency>
             <dependency>
                 <groupId>org.jboss.resteasy</groupId>
@@ -347,31 +317,11 @@
                 <groupId>org.jboss.resteasy</groupId>
                 <artifactId>resteasy-multipart-provider</artifactId>
                 <version>${version.org.jboss.resteasy}</version>
-                <exclusions>
-                    <exclusion>
-                        <groupId>javax.mail</groupId>
-                        <artifactId>mail</artifactId>
-                    </exclusion>
-                    <exclusion>
-                        <groupId>org.apache.james</groupId>
-                        <artifactId>apache-mime4j</artifactId>
-                    </exclusion>
-                </exclusions>
             </dependency>
             <dependency>
                 <groupId>org.jboss.resteasy</groupId>
                 <artifactId>resteasy-json-p-provider</artifactId>
                 <version>${version.org.jboss.resteasy}</version>
-                <exclusions>
-                    <exclusion>
-                        <groupId>javax.json</groupId>
-                        <artifactId>javax.json-api</artifactId>
-                    </exclusion>
-                    <exclusion>
-                        <groupId>org.glassfish</groupId>
-                        <artifactId>javax.json</artifactId>
-                    </exclusion>
-                </exclusions>
             </dependency>
             <dependency>
                 <groupId>org.jboss.resteasy</groupId>
@@ -382,16 +332,6 @@
                 <groupId>org.jboss.resteasy</groupId>
                 <artifactId>resteasy-validator-provider-11</artifactId>
                 <version>${version.org.jboss.resteasy}</version>
-                <exclusions>
-                    <exclusion>
-                        <groupId>org.hibernate</groupId>
-                        <artifactId>hibernate-validator</artifactId>
-                    </exclusion>
-                    <exclusion>
-                        <groupId>com.fasterxml</groupId>
-                        <artifactId>classmate</artifactId>
-                    </exclusion>
-                </exclusions>
             </dependency>
             <dependency>
                 <groupId>org.jboss.resteasy</groupId>
