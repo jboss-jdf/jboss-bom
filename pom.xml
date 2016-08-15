@@ -436,7 +436,6 @@
     </dependencyManagement>
 
     <modules>
-        <module>jboss-javaee7-with-spring3</module>
         <module>jboss-javaee7-with-spring4</module>
         <module>jboss-javaee7-with-tools</module>
     </modules>
