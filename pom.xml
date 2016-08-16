@@ -65,7 +65,7 @@
         <version.org.glassfish.jaxb>2.2.11.redhat-4</version.org.glassfish.jaxb>
 
         <!-- Version of Hibernate projects -->
-        <version.org.hibernate>5.0.9.Final-redhat-1</version.org.hibernate>
+        <version.org.hibernate>5.0.10.Final-redhat-1</version.org.hibernate>
         <version.org.hibernate-jpamodelgen>${version.org.hibernate}</version.org.hibernate-jpamodelgen>
         <version.org.hibernate.validator>5.2.4.Final-redhat-1</version.org.hibernate.validator>
         <version.org.hibernate.search>5.5.4.Final-redhat-1</version.org.hibernate.search>
@@ -367,10 +367,14 @@
                 <artifactId>jbossws-cxf-client</artifactId>
                 <version>${version.org.jboss.ws.cxf}</version>
                 <exclusions>
-                    <exclusion>
+                  <exclusion>
                     <groupId>org.jboss.com.sun.httpserver</groupId>
                     <artifactId>httpserver</artifactId>
-                    </exclusion>
+                  </exclusion>
+		  <exclusion>
+		    <groupId>org.apache.cxf</groupId>
+		    <artifactId>cxf-rt-rs-security-jose</artifactId>
+		  </exclusion>
                 </exclusions>
             </dependency>
 
