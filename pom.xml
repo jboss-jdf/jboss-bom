@@ -371,10 +371,6 @@
                     <groupId>org.jboss.com.sun.httpserver</groupId>
                     <artifactId>httpserver</artifactId>
                   </exclusion>
-		  <exclusion>
-		    <groupId>org.apache.cxf</groupId>
-		    <artifactId>cxf-rt-rs-security-jose</artifactId>
-		  </exclusion>
                 </exclusions>
             </dependency>
 
