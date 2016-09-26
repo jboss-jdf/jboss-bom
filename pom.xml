@@ -71,7 +71,7 @@
         <version.org.hibernate.search>5.5.4.Final-redhat-1</version.org.hibernate.search>
 
         <!-- Versions of projects not directly under JBoss umbrella -->
-        <version.junit>4.12</version.junit>
+        <version.junit>4.13</version.junit>
         <version.log4j>1.2.16</version.log4j>
         <version.org.testng>6.1.1</version.org.testng>
 
