@@ -13,7 +13,7 @@ To use the BOM, import into your dependency management:
             <dependency>
                <groupId>org.jboss.bom</groupId>
                <artifactId>jboss-javaee-7.1-eap-with-spring4</artifactId>
-               <version>7.1.0-SNAPSHOT</version>
+               <version>7.1.0.Alpha1-redhat-1</version>
                <type>pom</type>
                <scope>import</scope>
             </dependency>
