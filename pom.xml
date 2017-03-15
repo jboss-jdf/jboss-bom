@@ -65,7 +65,7 @@
         <version.org.glassfish.jaxb>2.2.11.redhat-4</version.org.glassfish.jaxb>
 
         <!-- Version of Hibernate projects -->
-        <version.org.hibernate>5.1.4.Final-redhat-1</version.org.hibernate>
+        <version.org.hibernate>5.1.5.Final-redhat-1</version.org.hibernate>
         <version.org.hibernate.commons-annotations>5.0.1.Final-redhat-2</version.org.hibernate.commons-annotations>
         <version.org.hibernate-jpamodelgen>${version.org.hibernate}</version.org.hibernate-jpamodelgen>
         <version.org.hibernate.validator>5.3.4.Final-redhat-1</version.org.hibernate.validator>
