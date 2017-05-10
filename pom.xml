@@ -45,7 +45,7 @@
     <properties>
 
         <!-- Versions of JBoss projects -->
-        <version.org.jboss.eap>7.1.0.Beta1-redhat-2</version.org.jboss.eap>
+        <version.org.jboss.eap>7.1.0.Beta1-redhat-3</version.org.jboss.eap>
         <version.org.infinispan>8.2.6.Final-redhat-1</version.org.infinispan>
         <version.org.jboss.arquillian>1.1.11.Final</version.org.jboss.arquillian>
         <version.org.jboss.arquillian.extension.drone>2.0.0.Final</version.org.jboss.arquillian.extension.drone>
@@ -66,7 +66,7 @@
         <version.org.glassfish.jaxb>2.2.11.redhat-4</version.org.glassfish.jaxb>
 
         <!-- Version of Hibernate projects -->
-        <version.org.hibernate>5.1.5.Final-redhat-1</version.org.hibernate>
+        <version.org.hibernate>5.1.6.Final-redhat-1</version.org.hibernate>
         <version.org.hibernate.commons-annotations>5.0.1.Final-redhat-2</version.org.hibernate.commons-annotations>
         <version.org.hibernate-jpamodelgen>${version.org.hibernate}</version.org.hibernate-jpamodelgen>
         <version.org.hibernate.validator>5.3.5.Final-redhat-1</version.org.hibernate.validator>
