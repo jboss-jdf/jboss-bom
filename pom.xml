@@ -47,7 +47,7 @@
         <!-- ############    E   A   P    P r o d u c t   V e r s i o n s  ############# -->
         
         <!-- JBoss projects -->
-        <version.org.jboss.jbossts.jbossjts>4.17.39.Final-redhat-1</version.org.jboss.jbossts.jbossjts>
+        <version.org.jboss.jbossts.jbossjts>4.17.42.Final-redhat-1</version.org.jboss.jbossts.jbossjts>
         <version.org.jboss.logging>3.1.4.GA-redhat-2</version.org.jboss.logging>
         <version.org.jboss.logging.processor>1.1.0.Final</version.org.jboss.logging.processor>
         <version.org.jboss.security.negotiation>2.3.13.Final-redhat-1</version.org.jboss.security.negotiation>
@@ -63,13 +63,13 @@
         <version.org.hibernate3.commons.annotations>3.2.0.Final</version.org.hibernate3.commons.annotations>
 
         <!-- RestEasy -->
-        <version.org.jboss.resteasy>2.3.19.Final-redhat-1</version.org.jboss.resteasy>
+        <version.org.jboss.resteasy>2.3.20.Final-redhat-1</version.org.jboss.resteasy>
         
         <!-- Picketlink -->
         <version.org.picketlink>2.5.4.SP12-redhat-1</version.org.picketlink>
 
         <!-- JBossWeb, it is used in jboss security negotiation project -->
-        <version.org.jboss.web>7.5.22.Final-redhat-1</version.org.jboss.web>
+        <version.org.jboss.web>7.5.23.Final-redhat-1</version.org.jboss.web>
 
         <!-- JBossxacml, it is used by pikcetlink-core -->
         <version.org.jboss.security.jbossxacml>2.0.8.Final-redhat-5</version.org.jboss.security.jbossxacml>
