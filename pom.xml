@@ -58,7 +58,7 @@
         <version.org.jboss.resteasy>3.0.23.Final-redhat-1</version.org.jboss.resteasy>
         <version.org.jboss.security.jboss-negotiation>3.0.4.Final-redhat-1</version.org.jboss.security.jboss-negotiation>
         <version.org.jboss.security.jbossxacml>2.0.8.Final-redhat-8</version.org.jboss.security.jbossxacml>
-        <version.org.jboss.spec.jboss.javaee7>1.1.0.Final-redhat-2</version.org.jboss.spec.jboss.javaee7>
+        <version.org.jboss.spec.jboss.javaee7>1.1.0.Final-redhat-3</version.org.jboss.spec.jboss.javaee7>
         <version.org.jboss.shrinkwrap.resolver>2.2.6</version.org.jboss.shrinkwrap.resolver>
         <version.org.jboss.ws.cxf>5.1.8.Final-redhat-1</version.org.jboss.ws.cxf>
         <version.org.picketbox.picketbox-commons>1.0.0.final-redhat-5</version.org.picketbox.picketbox-commons>
