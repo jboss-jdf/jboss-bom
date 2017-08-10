@@ -64,6 +64,11 @@
         <version.org.picketbox.picketbox-commons>1.0.0.final-redhat-5</version.org.picketbox.picketbox-commons>
         <version.org.picketlink>2.5.5.SP7-redhat-2</version.org.picketlink>
         <version.org.glassfish.jaxb>2.2.11.redhat-4</version.org.glassfish.jaxb>
+        <version.org.wildfly.security.elytron>1.1.0.CR5</version.org.wildfly.security.elytron>
+        <version.org.wildfly.client.config>1.0.0.CR3</version.org.wildfly.client.config>
+        <version.org.wildfly.common>1.2.0.CR1</version.org.wildfly.common>
+        <version.org.wildfly.discovery>1.0.0.CR1</version.org.wildfly.discovery>
+
 
         <!-- Version of Hibernate projects -->
         <version.org.hibernate>5.1.9.Final-redhat-1</version.org.hibernate>
@@ -431,7 +436,33 @@
             </dependency>
 
 
-        <!-- Thirdparty dependencies -->
+            <dependency>
+                <groupId>org.wildfly.security</groupId>
+                <artifactId>wildfly-elytron</artifactId>
+                <version>${version.org.wildfly.security.elytron}</version>
+            </dependency>
+
+
+            <dependency>
+                <groupId>org.wildfly.discovery</groupId>
+                <artifactId>wildfly-discovery-client</artifactId>
+                <version>${version.org.wildfly.discovery}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>org.wildfly.client</groupId>
+                <artifactId>wildfly-client-config</artifactId>
+                <version>${version.org.wildfly.client.config}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>org.wildfly.common</groupId>
+                <artifactId>wildfly-common</artifactId>
+                <version>${version.org.wildfly.common}</version>
+            </dependency>
+
+
+            <!-- Thirdparty dependencies -->
 
             <dependency>
                 <groupId>log4j</groupId>
