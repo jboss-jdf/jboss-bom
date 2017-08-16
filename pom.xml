@@ -79,8 +79,8 @@
 
         <!-- Versions of projects not directly under JBoss umbrella -->
         <version.junit>4.12</version.junit>
-        <version.log4j>1.2.17</version.log4j>
-        <version.org.testng>6.1.1</version.org.testng>
+        <version.log4j>1.2.17-redhat-1</version.log4j>
+        <version.org.testng>6.9.10</version.org.testng>
 
         <!-- Versions of Maven plugins, user must setup them by his/her own -->
         <version.surefire.plugin>2.17</version.surefire.plugin>
