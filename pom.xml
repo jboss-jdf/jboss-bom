@@ -64,9 +64,9 @@
         <version.org.picketbox.picketbox-commons>1.0.0.final-redhat-5</version.org.picketbox.picketbox-commons>
         <version.org.picketlink>2.5.5.SP8-redhat-1</version.org.picketlink>
         <version.org.glassfish.jaxb>2.2.11.redhat-4</version.org.glassfish.jaxb>
-        <version.org.wildfly.security.elytron>1.0.0.Final-redhat-1</version.org.wildfly.security.elytron>
+        <version.org.wildfly.security.elytron>1.1.1.Final-redhat-1</version.org.wildfly.security.elytron>
         <version.org.wildfly.client.config>1.0.0.Final-redhat-1</version.org.wildfly.client.config>
-        <version.org.wildfly.common>1.0.0.Final-redhat-1</version.org.wildfly.common>
+        <version.org.wildfly.common>1.2.0.Final-redhat-1</version.org.wildfly.common>
         <version.org.wildfly.discovery>1.0.0.Final-redhat-1</version.org.wildfly.discovery>
 
 
