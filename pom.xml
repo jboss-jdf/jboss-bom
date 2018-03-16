@@ -79,6 +79,8 @@
 
         <!-- Versions of projects not directly under JBoss umbrella -->
         <version.com.sun.xml.messaging.saaj.saaj-impl>1.3.16.SP1-redhat-6</version.com.sun.xml.messaging.saaj.saaj-impl>
+        <version.org.apache.xerces>2.11.0.SP5-redhat-1</version.org.apache.xerces>
+        
         <version.junit>4.12</version.junit>
         <version.log4j>1.2.17.redhat-3</version.log4j>
         <version.org.testng>6.9.10</version.org.testng>
@@ -159,6 +161,17 @@
                     <exclusion>
                         <groupId>org.jvnet.mimepull</groupId>
                         <artifactId>mimepull</artifactId>
+                    </exclusion>
+                </exclusions>
+            </dependency>
+            <dependency>
+                <groupId>xerces</groupId>
+                <artifactId>xercesImpl</artifactId>
+                <version>${version.org.apache.xerces}</version>
+                <exclusions>
+                    <exclusion>
+                        <groupId>xml-apis</groupId>
+                        <artifactId>xml-apis</artifactId>
                     </exclusion>
                 </exclusions>
             </dependency>
