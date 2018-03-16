@@ -78,6 +78,7 @@
         <version.org.hibernate.search>5.5.8.Final-redhat-1</version.org.hibernate.search>
 
         <!-- Versions of projects not directly under JBoss umbrella -->
+        <version.com.sun.xml.messaging.saaj.saaj-impl>1.3.16.SP1-redhat-6</version.com.sun.xml.messaging.saaj.saaj-impl>
         <version.junit>4.12</version.junit>
         <version.log4j>1.2.17.redhat-3</version.log4j>
         <version.org.testng>6.9.10</version.org.testng>
@@ -143,6 +144,23 @@
                 <groupId>org.glassfish.jaxb</groupId>
                 <artifactId>jaxb-xjc</artifactId>
                 <version>${version.org.glassfish.jaxb}</version>
+            </dependency>
+            <!-- Note, these jars are included here only because they are
+            transitive dependencies of jbossws-cxf-client -->
+            <dependency>
+                <groupId>com.sun.xml.messaging.saaj</groupId>
+                <artifactId>saaj-impl</artifactId>
+                <version>${version.com.sun.xml.messaging.saaj.saaj-impl}</version>
+                <exclusions>
+                    <exclusion>
+                        <groupId>javax.xml.soap</groupId>
+                        <artifactId>saaj-api</artifactId>
+                    </exclusion>
+                    <exclusion>
+                        <groupId>org.jvnet.mimepull</groupId>
+                        <artifactId>mimepull</artifactId>
+                    </exclusion>
+                </exclusions>
             </dependency>
 
             <!-- Hibernate ORM sub-modules -->
