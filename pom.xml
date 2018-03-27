@@ -72,7 +72,7 @@
 
         <!-- Version of Hibernate projects -->
         <version.org.hibernate>5.1.10.Final-redhat-1</version.org.hibernate>
-        <version.org.hibernate.commons.annotations>5.0.2.Final-redhat-2</version.org.hibernate.commons-annotations>
+        <version.org.hibernate.commons-annotations>5.0.2.Final-redhat-2</version.org.hibernate.commons-annotations>
         <version.org.hibernate-jpamodelgen>${version.org.hibernate}</version.org.hibernate-jpamodelgen>
         <version.org.hibernate.validator>5.3.6.Final-redhat-1</version.org.hibernate.validator>
         <version.org.hibernate.search>5.5.8.Final-redhat-1</version.org.hibernate.search>
