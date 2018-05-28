@@ -14,7 +14,7 @@ To use the BOM, import into your dependency management:
         <dependencies>
             <dependency>
                <groupId>org.jboss.bom</groupId>
-               <version>7.1.3-SNAPSHOT</version>
+               <version>7.1.3.GA</version>
                <artifactId>jboss-eap-javaee7-with-tools</artifactId>
                <type>pom</type>
                <scope>import</scope>
