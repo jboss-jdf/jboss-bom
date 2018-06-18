@@ -37,7 +37,6 @@
     <properties>
 
         <!-- Versions of JBoss projects -->
-        <version.org.glassfish.jaxb>2.3.0.redhat-1</version.org.glassfish.jaxb>
         <version.org.infinispan>9.2.5.Final-redhat-1</version.org.infinispan>
         <version.org.jboss.eap>7.2.0.CD13-redhat-SNAPSHOT</version.org.jboss.eap>
         <version.org.jboss.arquillian>1.1.13.Final</version.org.jboss.arquillian>
@@ -52,7 +51,6 @@
         <version.org.jboss.security.jbossxacml>2.0.8.Final-redhat-8</version.org.jboss.security.jbossxacml>
         <version.org.jboss.spec.jboss.javaee7>1.1.1.Final-redhat-1</version.org.jboss.spec.jboss.javaee7>
         <version.org.jboss.shrinkwrap.resolver>2.2.6</version.org.jboss.shrinkwrap.resolver>
-        <version.org.jboss.ws.cxf>5.2.1.Final-redhat-1</version.org.jboss.ws.cxf>
         <version.org.picketbox.picketbox-commons>1.0.0.final-redhat-5</version.org.picketbox.picketbox-commons>
         <version.org.picketlink>2.5.5.SP11-redhat-1</version.org.picketlink>
         <version.org.wildfly.arquillian>2.1.0.Final</version.org.wildfly.arquillian>
@@ -69,11 +67,7 @@
         <version.org.hibernate.search>5.5.8.Final-redhat-1</version.org.hibernate.search>
 
         <!-- Versions of projects not directly under JBoss umbrella -->
-        <version.com.sun.xml.messaging.saaj.saaj-impl>1.3.16.SP1-redhat-6</version.com.sun.xml.messaging.saaj.saaj-impl>
-        <version.org.apache.xerces>2.11.0.SP5-redhat-1</version.org.apache.xerces>
-        
         <version.junit>4.12</version.junit>
-        <version.log4j>1.2.17.redhat-3</version.log4j>
         <version.org.testng>6.11</version.org.testng>
 
         <!-- Versions of Maven plugins, user must setup them by his/her own -->
@@ -108,64 +102,17 @@
             <dependency>
                 <groupId>org.jboss.eap</groupId>
                 <artifactId>wildfly-ejb-client-bom</artifactId>
-                <version>${version.org.jboss.eap}</version>
+                <version>${project.version}</version>
                 <type>pom</type>
             </dependency>
             <dependency>
                 <groupId>org.jboss.eap</groupId>
                 <artifactId>wildfly-jms-client-bom</artifactId>
-                <version>${version.org.jboss.eap}</version>
+                <version>${project.version}</version>
                 <type>pom</type>
             </dependency>
 
         <!-- Individual EAP Components -->
-
-            <!-- Note, these jaxb jars are part of the private EAP 7 and should
-            not be used directly.  They are included here only because they are
-            transitive dependencies of jbossws-cxf-client -->
-            <dependency>
-                <groupId>org.glassfish.jaxb</groupId>
-                <artifactId>jaxb-core</artifactId>
-                <version>${version.org.glassfish.jaxb}</version>
-            </dependency>
-            <dependency>
-                <groupId>org.glassfish.jaxb</groupId>
-                <artifactId>jaxb-runtime</artifactId>
-                <version>${version.org.glassfish.jaxb}</version>
-            </dependency>
-            <dependency>
-                <groupId>org.glassfish.jaxb</groupId>
-                <artifactId>jaxb-xjc</artifactId>
-                <version>${version.org.glassfish.jaxb}</version>
-            </dependency>
-            <!-- Note, these jars are included here only because they are
-            transitive dependencies of jbossws-cxf-client -->
-            <dependency>
-                <groupId>com.sun.xml.messaging.saaj</groupId>
-                <artifactId>saaj-impl</artifactId>
-                <version>${version.com.sun.xml.messaging.saaj.saaj-impl}</version>
-                <exclusions>
-                    <exclusion>
-                        <groupId>javax.xml.soap</groupId>
-                        <artifactId>saaj-api</artifactId>
-                    </exclusion>
-                    <exclusion>
-                        <groupId>org.jvnet.mimepull</groupId>
-                        <artifactId>mimepull</artifactId>
-                    </exclusion>
-                </exclusions>
-            </dependency>
-            <dependency>
-                <groupId>xerces</groupId>
-                <artifactId>xercesImpl</artifactId>
-                <version>${version.org.apache.xerces}</version>
-                <exclusions>
-                    <exclusion>
-                        <groupId>xml-apis</groupId>
-                        <artifactId>xml-apis</artifactId>
-                    </exclusion>
-                </exclusions>
-            </dependency>
 
             <!-- Hibernate ORM sub-modules -->
             <dependency>
@@ -189,18 +136,6 @@
                 <groupId>org.hibernate</groupId>
                 <artifactId>hibernate-envers</artifactId>
                 <version>${version.org.hibernate}</version>
-            </dependency>
-            <dependency>
-                <groupId>org.hibernate</groupId>
-                <artifactId>hibernate-infinispan</artifactId>
-                <version>${version.org.hibernate}</version>
-                <!-- we use org.jboss.spec.javax.transaction:jboss-transaction-api_1.1_spec from hibernate-core here -->
-                <exclusions>
-                    <exclusion>
-                        <groupId>org.jboss.javaee</groupId>
-                        <artifactId>jboss-transaction-api</artifactId>
-                    </exclusion>
-                </exclusions>
             </dependency>
             <dependency>
                 <groupId>org.hibernate</groupId>
@@ -398,18 +333,6 @@
             </dependency>
 
             <dependency>
-                <groupId>org.jboss.ws.cxf</groupId>
-                <artifactId>jbossws-cxf-client</artifactId>
-                <version>${version.org.jboss.ws.cxf}</version>
-                <exclusions>
-                  <exclusion>
-                    <groupId>org.jboss.com.sun.httpserver</groupId>
-                    <artifactId>httpserver</artifactId>
-                  </exclusion>
-                </exclusions>
-            </dependency>
-
-            <dependency>
                 <groupId>org.picketbox</groupId>
                 <artifactId>picketbox-commons</artifactId>
                 <version>${version.org.picketbox.picketbox-commons}</version>
@@ -481,14 +404,6 @@
                 <groupId>org.wildfly.common</groupId>
                 <artifactId>wildfly-common</artifactId>
                 <version>${version.org.wildfly.common}</version>
-            </dependency>
-
-            <!-- Thirdparty dependencies -->
-
-            <dependency>
-                <groupId>log4j</groupId>
-                <artifactId>log4j</artifactId>
-                <version>${version.log4j}</version>
             </dependency>
 
         </dependencies>
